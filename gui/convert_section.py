@@ -1,12 +1,15 @@
 import customtkinter as ctk
 from tkinter import filedialog, messagebox
 from PIL import Image
+import pillow_heif
+
+pillow_heif.register_heif_opener()
 from image_tools.tools import convert_image_file
 from .utils import show_image_preview
 
 def show_convert_section(main_frame):
     def select_images():
-        file_paths = filedialog.askopenfilenames(filetypes=[("Image files", "*.png;*.jpg;*.jpeg;*.webp")])
+        file_paths = filedialog.askopenfilenames(filetypes=[("Image files", "*.png;*.jpg;*.jpeg;*.webp;*.heic")])
         if file_paths:
             entry_image_path.delete(0, ctk.END)
             entry_image_path.insert(0, "; ".join(file_paths))

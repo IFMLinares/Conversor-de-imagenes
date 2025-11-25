@@ -45,7 +45,7 @@ Conversor de imágenes con interfaz gráfica para Windows. Permite convertir y q
 ### Interfaz inicial: Conversion de imagenes
 ![Interfaz principal](docs/interfaz_principal.png)
 
-### interfaz de remover fondo 
+### Interfaz de remover fondo 
 ![Remover fondo](docs/remover_fondo.png)
 
 ## Compilar a .exe

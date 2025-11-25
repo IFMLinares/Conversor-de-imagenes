@@ -42,8 +42,6 @@ def run_app():
     # Importar las secciones modularizadas
     from gui.convert_section import show_convert_section
     from gui.remove_bg_section import show_remove_bg_section
-    from gui.enhance_section import show_enhance_section
-    from gui.ocr_section import show_ocr_section
 
     # Función para mostrar la sección seleccionada
     def show_section(section):
@@ -53,20 +51,12 @@ def run_app():
             show_convert_section(main_frame)
         elif section == "remove_bg":
             show_remove_bg_section(main_frame)
-        elif section == "enhance":
-            show_enhance_section(main_frame)
-        elif section == "ocr":
-            show_ocr_section(main_frame)
 
     # Botones del menú lateral
     convert_btn = ctk.CTkButton(sidebar, text="Conversor de Imágenes", command=lambda: show_section("convert"), width=160)
     convert_btn.grid(row=1, column=0, padx=10, pady=10, sticky="ew")
     remove_bg_btn = ctk.CTkButton(sidebar, text="Remover Fondo", command=lambda: show_section("remove_bg"), width=160)
     remove_bg_btn.grid(row=2, column=0, padx=10, pady=10, sticky="ew")
-    enhance_btn = ctk.CTkButton(sidebar, text="Mejorar Calidad", command=lambda: show_section("enhance"), width=160)
-    enhance_btn.grid(row=3, column=0, padx=10, pady=10, sticky="ew")
-    ocr_btn = ctk.CTkButton(sidebar, text="Reconocer Texto", command=lambda: show_section("ocr"), width=160)
-    ocr_btn.grid(row=4, column=0, padx=10, pady=10, sticky="ew")
 
 
     # Switch de tema en la parte inferior izquierda

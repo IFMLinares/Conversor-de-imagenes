@@ -1,0 +1,26 @@
+# Entorno virtual
+env/
+
+# Archivos y carpetas de PyInstaller
+build/
+dist/
+*.spec
+
+# Archivos temporales de Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Archivos de log
+*.log
+
+# Archivos de configuración de editores
+.vscode/
+.idea/
+
+# Salida de imágenes generadas
+Images Converted/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db

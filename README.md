@@ -4,7 +4,7 @@ Conversor de imágenes con interfaz gráfica para Windows. Permite convertir y q
 
 ## Características
 
-- Conversión de imágenes a varios formatos (PNG, JPG, WEBP, etc.)
+- Conversión de imágenes a varios formatos (PNG, JPG, WEBP, HEIC, etc.)
 - Remover fondo de imágenes automáticamente
 - Selección múltiple de imágenes
 - Guardado automático en carpetas organizadas por fecha
